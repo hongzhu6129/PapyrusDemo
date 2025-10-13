@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YMrCIKgMEfC2ALHn2V8OIQ" name="PapyrusDemo">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_YQOFYKgMEfC2ALHn2V8OIQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_VyWC0KgOEfC2ALHn2V8OIQ" name="ATM With Draw Use Case" node="_xxol8KgTEfC2ALHn2V8OIQ _Hr8ZwKgXEfC2ALHn2V8OIQ _ehRywKgXEfC2ALHn2V8OIQ _ARRigKgYEfC2ALHn2V8OIQ _H916sKgaEfC2ALHn2V8OIQ _NFuagKgaEfC2ALHn2V8OIQ" group="_W0Yx0KgSEfC2ALHn2V8OIQ _8IObwKgSEfC2ALHn2V8OIQ __hh54KgSEfC2ALHn2V8OIQ">
+    <edge xmi:type="uml:ObjectFlow" xmi:id="_sf_zkKgbEfC2ALHn2V8OIQ" target="_ehRywKgXEfC2ALHn2V8OIQ" source="_H916sKgaEfC2ALHn2V8OIQ">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_sgGhQKgbEfC2ALHn2V8OIQ" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_sgHIUKgbEfC2ALHn2V8OIQ" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ObjectFlow" xmi:id="_zCmk8KgbEfC2ALHn2V8OIQ" target="_H916sKgaEfC2ALHn2V8OIQ" source="_Hr8ZwKgXEfC2ALHn2V8OIQ">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_zCwV8KgbEfC2ALHn2V8OIQ" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_zCwV8agbEfC2ALHn2V8OIQ" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Gv8K4KgfEfC2ALHn2V8OIQ" target="_Hr8ZwKgXEfC2ALHn2V8OIQ" source="_xxol8KgTEfC2ALHn2V8OIQ"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_W0Yx0KgSEfC2ALHn2V8OIQ" name="Customer" node="_Hr8ZwKgXEfC2ALHn2V8OIQ"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_8IObwKgSEfC2ALHn2V8OIQ" name="ATM Machine" node="_ehRywKgXEfC2ALHn2V8OIQ"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="__hh54KgSEfC2ALHn2V8OIQ" name="Bank" node="_ARRigKgYEfC2ALHn2V8OIQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_xxol8KgTEfC2ALHn2V8OIQ" name="" outgoing="_Gv8K4KgfEfC2ALHn2V8OIQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Hr8ZwKgXEfC2ALHn2V8OIQ" name="Insert card" incoming="_Gv8K4KgfEfC2ALHn2V8OIQ" outgoing="_zCmk8KgbEfC2ALHn2V8OIQ" inPartition="_W0Yx0KgSEfC2ALHn2V8OIQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ehRywKgXEfC2ALHn2V8OIQ" name="Read card" incoming="_sf_zkKgbEfC2ALHn2V8OIQ" inPartition="_8IObwKgSEfC2ALHn2V8OIQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ARRigKgYEfC2ALHn2V8OIQ" name="Check card validity" inPartition="__hh54KgSEfC2ALHn2V8OIQ"/>
+    <node xmi:type="uml:CentralBufferNode" xmi:id="_H916sKgaEfC2ALHn2V8OIQ" name="Card" incoming="_zCmk8KgbEfC2ALHn2V8OIQ" outgoing="_sf_zkKgbEfC2ALHn2V8OIQ">
+      <upperBound xmi:type="uml:LiteralInteger" xmi:id="_H9_EoKgaEfC2ALHn2V8OIQ" value="1"/>
+    </node>
+    <node xmi:type="uml:CentralBufferNode" xmi:id="_NFuagKgaEfC2ALHn2V8OIQ" name="Caed info">
+      <upperBound xmi:type="uml:LiteralInteger" xmi:id="_NFvBkKgaEfC2ALHn2V8OIQ" value="1"/>
+    </node>
+  </packagedElement>
+</uml:Model>
