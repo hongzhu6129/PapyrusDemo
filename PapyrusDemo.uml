@@ -27,4 +27,22 @@
       <upperBound xmi:type="uml:LiteralInteger" xmi:id="_NFvBkKgaEfC2ALHn2V8OIQ" value="1"/>
     </node>
   </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_dDR3wLKsEfCbGOiQGkfr1g" name="Process Payment">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LO8WoLKwEfCbGOiQGkfr1g" client="_dDR3wLKsEfCbGOiQGkfr1g" supplier="_hh_pULKtEfCbGOiQGkfr1g" contract="_hh_pULKtEfCbGOiQGkfr1g"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_HIA9gLKwEfCbGOiQGkfr1g" client="_dDR3wLKsEfCbGOiQGkfr1g" supplier="_Bd4sQLKwEfCbGOiQGkfr1g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_oHkEkLKsEfCbGOiQGkfr1g" name="Accounting">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_yCl7kLKyEfCbGOiQGkfr1g" name="Port3" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_AZCx0LK1EfCbGOiQGkfr1g" name="Port3" aggregation="composite"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_8OoggLKsEfCbGOiQGkfr1g" name="Orders Processing">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_KklgILKyEfCbGOiQGkfr1g" name="Port1" aggregation="composite"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_hh_pULKtEfCbGOiQGkfr1g" name="Orders"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Bd4sQLKwEfCbGOiQGkfr1g" name="Manage Orders"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Q4wXcLKzEfCbGOiQGkfr1g" name="Manage Customer"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xaPssLKzEfCbGOiQGkfr1g" client="_yCl7kLKyEfCbGOiQGkfr1g" supplier="_Q4wXcLKzEfCbGOiQGkfr1g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_iTvyMLK0EfCbGOiQGkfr1g" client="_KklgILKyEfCbGOiQGkfr1g" supplier="_yCl7kLKyEfCbGOiQGkfr1g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_efvqMLK2EfCbGOiQGkfr1g" client="_AZCx0LK1EfCbGOiQGkfr1g" supplier="_hh_pULKtEfCbGOiQGkfr1g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_md0CELK4EfCbGOiQGkfr1g" client="_KklgILKyEfCbGOiQGkfr1g" supplier="_AZCx0LK1EfCbGOiQGkfr1g"/>
 </uml:Model>
