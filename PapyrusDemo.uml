@@ -1,48 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YMrCIKgMEfC2ALHn2V8OIQ" name="PapyrusDemo">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_YQOFYKgMEfC2ALHn2V8OIQ">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_VyWC0KgOEfC2ALHn2V8OIQ" name="ATM With Draw Use Case" node="_xxol8KgTEfC2ALHn2V8OIQ _Hr8ZwKgXEfC2ALHn2V8OIQ _ehRywKgXEfC2ALHn2V8OIQ _ARRigKgYEfC2ALHn2V8OIQ _H916sKgaEfC2ALHn2V8OIQ _NFuagKgaEfC2ALHn2V8OIQ" group="_W0Yx0KgSEfC2ALHn2V8OIQ _8IObwKgSEfC2ALHn2V8OIQ __hh54KgSEfC2ALHn2V8OIQ">
-    <edge xmi:type="uml:ObjectFlow" xmi:id="_sf_zkKgbEfC2ALHn2V8OIQ" target="_ehRywKgXEfC2ALHn2V8OIQ" source="_H916sKgaEfC2ALHn2V8OIQ">
-      <guard xmi:type="uml:LiteralBoolean" xmi:id="_sgGhQKgbEfC2ALHn2V8OIQ" value="true"/>
-      <weight xmi:type="uml:LiteralInteger" xmi:id="_sgHIUKgbEfC2ALHn2V8OIQ" value="1"/>
-    </edge>
-    <edge xmi:type="uml:ObjectFlow" xmi:id="_zCmk8KgbEfC2ALHn2V8OIQ" target="_H916sKgaEfC2ALHn2V8OIQ" source="_Hr8ZwKgXEfC2ALHn2V8OIQ">
-      <guard xmi:type="uml:LiteralBoolean" xmi:id="_zCwV8KgbEfC2ALHn2V8OIQ" value="true"/>
-      <weight xmi:type="uml:LiteralInteger" xmi:id="_zCwV8agbEfC2ALHn2V8OIQ" value="1"/>
-    </edge>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_Gv8K4KgfEfC2ALHn2V8OIQ" target="_Hr8ZwKgXEfC2ALHn2V8OIQ" source="_xxol8KgTEfC2ALHn2V8OIQ"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_W0Yx0KgSEfC2ALHn2V8OIQ" name="Customer" node="_Hr8ZwKgXEfC2ALHn2V8OIQ"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_8IObwKgSEfC2ALHn2V8OIQ" name="ATM Machine" node="_ehRywKgXEfC2ALHn2V8OIQ"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="__hh54KgSEfC2ALHn2V8OIQ" name="Bank" node="_ARRigKgYEfC2ALHn2V8OIQ"/>
-    <node xmi:type="uml:InitialNode" xmi:id="_xxol8KgTEfC2ALHn2V8OIQ" name="" outgoing="_Gv8K4KgfEfC2ALHn2V8OIQ"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_Hr8ZwKgXEfC2ALHn2V8OIQ" name="Insert card" incoming="_Gv8K4KgfEfC2ALHn2V8OIQ" outgoing="_zCmk8KgbEfC2ALHn2V8OIQ" inPartition="_W0Yx0KgSEfC2ALHn2V8OIQ"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_ehRywKgXEfC2ALHn2V8OIQ" name="Read card" incoming="_sf_zkKgbEfC2ALHn2V8OIQ" inPartition="_8IObwKgSEfC2ALHn2V8OIQ"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_ARRigKgYEfC2ALHn2V8OIQ" name="Check card validity" inPartition="__hh54KgSEfC2ALHn2V8OIQ"/>
-    <node xmi:type="uml:CentralBufferNode" xmi:id="_H916sKgaEfC2ALHn2V8OIQ" name="Card" incoming="_zCmk8KgbEfC2ALHn2V8OIQ" outgoing="_sf_zkKgbEfC2ALHn2V8OIQ">
-      <upperBound xmi:type="uml:LiteralInteger" xmi:id="_H9_EoKgaEfC2ALHn2V8OIQ" value="1"/>
-    </node>
-    <node xmi:type="uml:CentralBufferNode" xmi:id="_NFuagKgaEfC2ALHn2V8OIQ" name="Caed info">
-      <upperBound xmi:type="uml:LiteralInteger" xmi:id="_NFvBkKgaEfC2ALHn2V8OIQ" value="1"/>
-    </node>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_dDR3wLKsEfCbGOiQGkfr1g" name="Process Payment">
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LO8WoLKwEfCbGOiQGkfr1g" client="_dDR3wLKsEfCbGOiQGkfr1g" supplier="_hh_pULKtEfCbGOiQGkfr1g" contract="_hh_pULKtEfCbGOiQGkfr1g"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_HIA9gLKwEfCbGOiQGkfr1g" client="_dDR3wLKsEfCbGOiQGkfr1g" supplier="_Bd4sQLKwEfCbGOiQGkfr1g"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_oHkEkLKsEfCbGOiQGkfr1g" name="Accounting">
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_yCl7kLKyEfCbGOiQGkfr1g" name="Port3" aggregation="composite"/>
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_AZCx0LK1EfCbGOiQGkfr1g" name="Port3" aggregation="composite"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_8OoggLKsEfCbGOiQGkfr1g" name="Orders Processing">
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_KklgILKyEfCbGOiQGkfr1g" name="Port1" aggregation="composite"/>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_YMrCIKgMEfC2ALHn2V8OIQ" name="PapyrusDemo">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_YQOFYKgMEfC2ALHn2V8OIQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_VyWC0KgOEfC2ALHn2V8OIQ" name="ATM With Draw Use Case" node="_xxol8KgTEfC2ALHn2V8OIQ _Hr8ZwKgXEfC2ALHn2V8OIQ _ehRywKgXEfC2ALHn2V8OIQ _ARRigKgYEfC2ALHn2V8OIQ _H916sKgaEfC2ALHn2V8OIQ _NFuagKgaEfC2ALHn2V8OIQ" group="_W0Yx0KgSEfC2ALHn2V8OIQ _8IObwKgSEfC2ALHn2V8OIQ __hh54KgSEfC2ALHn2V8OIQ">
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_sf_zkKgbEfC2ALHn2V8OIQ" target="_ehRywKgXEfC2ALHn2V8OIQ" source="_H916sKgaEfC2ALHn2V8OIQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_sgGhQKgbEfC2ALHn2V8OIQ" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_sgHIUKgbEfC2ALHn2V8OIQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_zCmk8KgbEfC2ALHn2V8OIQ" target="_H916sKgaEfC2ALHn2V8OIQ" source="_Hr8ZwKgXEfC2ALHn2V8OIQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zCwV8KgbEfC2ALHn2V8OIQ" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zCwV8agbEfC2ALHn2V8OIQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Gv8K4KgfEfC2ALHn2V8OIQ" target="_Hr8ZwKgXEfC2ALHn2V8OIQ" source="_xxol8KgTEfC2ALHn2V8OIQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_W0Yx0KgSEfC2ALHn2V8OIQ" name="Customer" node="_Hr8ZwKgXEfC2ALHn2V8OIQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_8IObwKgSEfC2ALHn2V8OIQ" name="ATM Machine" node="_ehRywKgXEfC2ALHn2V8OIQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="__hh54KgSEfC2ALHn2V8OIQ" name="Bank" node="_ARRigKgYEfC2ALHn2V8OIQ"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_xxol8KgTEfC2ALHn2V8OIQ" name="" outgoing="_Gv8K4KgfEfC2ALHn2V8OIQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Hr8ZwKgXEfC2ALHn2V8OIQ" name="Insert card" incoming="_Gv8K4KgfEfC2ALHn2V8OIQ" outgoing="_zCmk8KgbEfC2ALHn2V8OIQ" inPartition="_W0Yx0KgSEfC2ALHn2V8OIQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ehRywKgXEfC2ALHn2V8OIQ" name="Read card" incoming="_sf_zkKgbEfC2ALHn2V8OIQ" inPartition="_8IObwKgSEfC2ALHn2V8OIQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ARRigKgYEfC2ALHn2V8OIQ" name="Check card validity" inPartition="__hh54KgSEfC2ALHn2V8OIQ"/>
+      <node xmi:type="uml:CentralBufferNode" xmi:id="_H916sKgaEfC2ALHn2V8OIQ" name="Card" incoming="_zCmk8KgbEfC2ALHn2V8OIQ" outgoing="_sf_zkKgbEfC2ALHn2V8OIQ">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_H9_EoKgaEfC2ALHn2V8OIQ" value="1"/>
+      </node>
+      <node xmi:type="uml:CentralBufferNode" xmi:id="_NFuagKgaEfC2ALHn2V8OIQ" name="Caed info">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_NFvBkKgaEfC2ALHn2V8OIQ" value="1"/>
+      </node>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_hh_pULKtEfCbGOiQGkfr1g" name="Orders"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_Bd4sQLKwEfCbGOiQGkfr1g" name="Manage Orders"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_Q4wXcLKzEfCbGOiQGkfr1g" name="Manage Customer"/>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_xaPssLKzEfCbGOiQGkfr1g" client="_yCl7kLKyEfCbGOiQGkfr1g" supplier="_Q4wXcLKzEfCbGOiQGkfr1g"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_iTvyMLK0EfCbGOiQGkfr1g" client="_KklgILKyEfCbGOiQGkfr1g" supplier="_yCl7kLKyEfCbGOiQGkfr1g"/>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_efvqMLK2EfCbGOiQGkfr1g" client="_AZCx0LK1EfCbGOiQGkfr1g" supplier="_hh_pULKtEfCbGOiQGkfr1g"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_md0CELK4EfCbGOiQGkfr1g" client="_KklgILKyEfCbGOiQGkfr1g" supplier="_AZCx0LK1EfCbGOiQGkfr1g"/>
-</uml:Model>
+    <packagedElement xmi:type="uml:Component" xmi:id="_dDR3wLKsEfCbGOiQGkfr1g" name="Process Payment">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LO8WoLKwEfCbGOiQGkfr1g" client="_dDR3wLKsEfCbGOiQGkfr1g" supplier="_hh_pULKtEfCbGOiQGkfr1g" contract="_hh_pULKtEfCbGOiQGkfr1g"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_HIA9gLKwEfCbGOiQGkfr1g" client="_dDR3wLKsEfCbGOiQGkfr1g" supplier="_Bd4sQLKwEfCbGOiQGkfr1g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_oHkEkLKsEfCbGOiQGkfr1g" name="Accounting">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_yCl7kLKyEfCbGOiQGkfr1g" name="Port3" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_AZCx0LK1EfCbGOiQGkfr1g" name="Port3" aggregation="composite"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_8OoggLKsEfCbGOiQGkfr1g" name="Orders Processing">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_KklgILKyEfCbGOiQGkfr1g" name="Port1" aggregation="composite"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_hh_pULKtEfCbGOiQGkfr1g" name="Orders"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_Bd4sQLKwEfCbGOiQGkfr1g" name="Manage Orders"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_Q4wXcLKzEfCbGOiQGkfr1g" name="Manage Customer"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_xaPssLKzEfCbGOiQGkfr1g" client="_yCl7kLKyEfCbGOiQGkfr1g" supplier="_Q4wXcLKzEfCbGOiQGkfr1g"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_iTvyMLK0EfCbGOiQGkfr1g" client="_KklgILKyEfCbGOiQGkfr1g" supplier="_yCl7kLKyEfCbGOiQGkfr1g"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_efvqMLK2EfCbGOiQGkfr1g" client="_AZCx0LK1EfCbGOiQGkfr1g" supplier="_hh_pULKtEfCbGOiQGkfr1g"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_md0CELK4EfCbGOiQGkfr1g" client="_KklgILKyEfCbGOiQGkfr1g" supplier="_AZCx0LK1EfCbGOiQGkfr1g"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_t6-osLMwEfCLbOSzd9pzHg" name="Actor12"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_xpStgLMwEfCLbOSzd9pzHg" name="Component13" useCase="_4DGvQLMwEfCLbOSzd9pzHg _6O5RYLMwEfCLbOSzd9pzHg _8ciNoLMwEfCLbOSzd9pzHg __QqiILMwEfCLbOSzd9pzHg _DCYgQLMxEfCLbOSzd9pzHg _S_juoLMxEfCLbOSzd9pzHg">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_4DGvQLMwEfCLbOSzd9pzHg" name="UseCase1" subject="_xpStgLMwEfCLbOSzd9pzHg">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9qKeYLMwEfCLbOSzd9pzHg" name="ExtensionPoint2"/>
+        <include xmi:type="uml:Include" xmi:id="_7dRJALMwEfCLbOSzd9pzHg" addition="_6O5RYLMwEfCLbOSzd9pzHg"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6O5RYLMwEfCLbOSzd9pzHg" name="UseCase2" subject="_xpStgLMwEfCLbOSzd9pzHg"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_8ciNoLMwEfCLbOSzd9pzHg" name="UseCase3" subject="_xpStgLMwEfCLbOSzd9pzHg">
+        <extend xmi:type="uml:Extend" xmi:id="_9qJQQLMwEfCLbOSzd9pzHg" extendedCase="_4DGvQLMwEfCLbOSzd9pzHg" extensionLocation="_9qKeYLMwEfCLbOSzd9pzHg"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="__QqiILMwEfCLbOSzd9pzHg" name="UseCase4" subject="_xpStgLMwEfCLbOSzd9pzHg">
+        <generalization xmi:type="uml:Generalization" xmi:id="_D39dYLMxEfCLbOSzd9pzHg" general="_6O5RYLMwEfCLbOSzd9pzHg"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DCYgQLMxEfCLbOSzd9pzHg" name="UseCase5" subject="_xpStgLMwEfCLbOSzd9pzHg">
+        <generalization xmi:type="uml:Generalization" xmi:id="_EhzroLMxEfCLbOSzd9pzHg" general="_6O5RYLMwEfCLbOSzd9pzHg"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_S_juoLMxEfCLbOSzd9pzHg" name="UseCase6" subject="_xpStgLMwEfCLbOSzd9pzHg">
+        <include xmi:type="uml:Include" xmi:id="_VVWhULMxEfCLbOSzd9pzHg" addition="_6O5RYLMwEfCLbOSzd9pzHg"/>
+      </ownedUseCase>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ECn0LMwEfCLbOSzd9pzHg" memberEnd="_5EEdALMwEfCLbOSzd9pzHg _5EEdAbMwEfCLbOSzd9pzHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5ED18LMwEfCLbOSzd9pzHg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5ED18bMwEfCLbOSzd9pzHg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5EEdALMwEfCLbOSzd9pzHg" name="usecase1" type="_4DGvQLMwEfCLbOSzd9pzHg" association="_5ECn0LMwEfCLbOSzd9pzHg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5EEdAbMwEfCLbOSzd9pzHg" name="actor12" type="_t6-osLMwEfCLbOSzd9pzHg" association="_5ECn0LMwEfCLbOSzd9pzHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GocoALMxEfCLbOSzd9pzHg" name="LiteralInteger1" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GofrULMxEfCLbOSzd9pzHg" name="LiteralUnlimitedNatural1" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TprpsLMxEfCLbOSzd9pzHg" memberEnd="_Tps30bMxEfCLbOSzd9pzHg _Tps30rMxEfCLbOSzd9pzHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TpsQwLMxEfCLbOSzd9pzHg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tps30LMxEfCLbOSzd9pzHg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Tps30bMxEfCLbOSzd9pzHg" name="usecase6" type="_S_juoLMxEfCLbOSzd9pzHg" association="_TprpsLMxEfCLbOSzd9pzHg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Tps30rMxEfCLbOSzd9pzHg" name="actor12" type="_t6-osLMwEfCLbOSzd9pzHg" association="_TprpsLMxEfCLbOSzd9pzHg"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_0hg30LMwEfCLbOSzd9pzHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0hj7ILMwEfCLbOSzd9pzHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Subsystem xmi:id="_2YHNELMwEfCLbOSzd9pzHg" base_Component="_xpStgLMwEfCLbOSzd9pzHg"/>
+</xmi:XMI>
