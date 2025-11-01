@@ -83,12 +83,12 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_Tps30bMxEfCLbOSzd9pzHg" name="usecase6" type="_S_juoLMxEfCLbOSzd9pzHg" association="_TprpsLMxEfCLbOSzd9pzHg"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_Tps30rMxEfCLbOSzd9pzHg" name="actor12" type="_t6-osLMwEfCLbOSzd9pzHg" association="_TprpsLMxEfCLbOSzd9pzHg"/>
     </packagedElement>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_0hg30LMwEfCLbOSzd9pzHg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0hj7ILMwEfCLbOSzd9pzHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cadQkLcHEfCZsMx9M8UTQw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cajXMLcHEfCZsMx9M8UTQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Model>
-  <standard:Subsystem xmi:id="_2YHNELMwEfCLbOSzd9pzHg" base_Component="_xpStgLMwEfCLbOSzd9pzHg"/>
+  <standard:Service xmi:id="_-AH_oLcHEfCZsMx9M8UTQw" base_Component="_dDR3wLKsEfCbGOiQGkfr1g"/>
 </xmi:XMI>
