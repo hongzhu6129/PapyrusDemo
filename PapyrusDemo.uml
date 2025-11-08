@@ -326,6 +326,247 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AmfLYbyOEfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7rn0ELyyEfCmPuiV1Waysg" name="ReviewManagerService">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_guxVoby-EfCmPuiV1Waysg" name="reviewDB" type="_aS-98Ly-EfCmPuiV1Waysg" association="_guu5YLy-EfCmPuiV1Waysg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nW9xoLy-EfCmPuiV1Waysg" name="LiteralInteger1" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nW-YsLy-EfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="1"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NVjeMLy-EfCmPuiV1Waysg" client="_7rn0ELyyEfCmPuiV1Waysg" supplier="_LJvu8LyzEfCmPuiV1Waysg" contract="_LJvu8LyzEfCmPuiV1Waysg"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OMa0wLy-EfCmPuiV1Waysg" client="_7rn0ELyyEfCmPuiV1Waysg" supplier="_OAX90LyzEfCmPuiV1Waysg" contract="_OAX90LyzEfCmPuiV1Waysg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LJvu8LyzEfCmPuiV1Waysg" name="AddReview">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8g3aMLzXEfCmPuiV1Waysg" name="addProductReview">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_ipYLzYEfCmPuiV1Waysg" name="prodId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ILIB4LzYEfCmPuiV1Waysg" name="customerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NT22QLzYEfCmPuiV1Waysg" name="rating">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_P1TfULzYEfCmPuiV1Waysg" name="comment">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_UJsssLzYEfCmPuiV1Waysg" name="successful" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fOEZELzYEfCmPuiV1Waysg" name="addShopReview">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hhIA0LzYEfCmPuiV1Waysg" name="shopId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_kT974LzYEfCmPuiV1Waysg" name="customerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nm5sQLzYEfCmPuiV1Waysg" name="rating">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_pxFE0LzYEfCmPuiV1Waysg" name="comments">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r2Sd0LzYEfCmPuiV1Waysg" name="successful" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_OAX90LyzEfCmPuiV1Waysg" name="ViewReviews">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-tnwMLzYEfCmPuiV1Waysg" name="getShopReview">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Aj6jcLzZEfCmPuiV1Waysg" name="shopId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_EokEoLzZEfCmPuiV1Waysg" name="reviewSummary" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NN47sLzZEfCmPuiV1Waysg" name="getProductReview">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_PUPkMLzZEfCmPuiV1Waysg" name="productId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_S2T8wLzZEfCmPuiV1Waysg" name="reviewSummary" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_SkJD8LyzEfCmPuiV1Waysg" name="Autheticate">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_o0gSYLzZEfCmPuiV1Waysg" name="addProductReviewPermitted">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tdeooLzZEfCmPuiV1Waysg" name="customerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_wROioLzZEfCmPuiV1Waysg" name="productId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_zNITELzZEfCmPuiV1Waysg" name="permitted" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2x6ocLzZEfCmPuiV1Waysg" name="addShopReviewPermitted">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_5A_IELzZEfCmPuiV1Waysg" name="customerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7gPYwLzZEfCmPuiV1Waysg" name="shopId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9v7jcLzZEfCmPuiV1Waysg" name="permitted">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2uEqELy0EfCmPuiV1Waysg" name="Review" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6nwRYLy0EfCmPuiV1Waysg" name="customer_id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FmDDkLy4EfCmPuiV1Waysg" name="starRating">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_i9jToLy5EfCmPuiV1Waysg" name="comments">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JO1dQLy6EfCmPuiV1Waysg" name="SetReview" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ot6coLzcEfCmPuiV1Waysg" name="customerID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ytCO0Ly6EfCmPuiV1Waysg" name="rating">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Pm250Ly7EfCmPuiV1Waysg" name="LiteralInteger1" value="5"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_oZBy8Ly7EfCmPuiV1Waysg" name="comments">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_s6X3MLy7EfCmPuiV1Waysg" name="LiteralString1" value="&quot; &quot;"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xatO0Ly7EfCmPuiV1Waysg" name="success" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_4yLysLy7EfCmPuiV1Waysg" name="LiteralBoolean1" value="true"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_PK7EYLy-EfCmPuiV1Waysg" client="_7rn0ELyyEfCmPuiV1Waysg" supplier="_SkJD8LyzEfCmPuiV1Waysg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aS-98Ly-EfCmPuiV1Waysg" name="ReviewDatabase">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2XJzUby-EfCmPuiV1Waysg" name="reviews" type="_2uEqELy0EfCmPuiV1Waysg" aggregation="composite" association="_2XHXELy-EfCmPuiV1Waysg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5U1scLy-EfCmPuiV1Waysg" name="LiteralInteger1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5U2TgLy-EfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_U2sDoLzaEfCmPuiV1Waysg" name="searchProductReviews">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xfyz4LzaEfCmPuiV1Waysg" name="productId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ajiRsLzaEfCmPuiV1Waysg" name="reviewSummary" type="_2aF28LzcEfCmPuiV1Waysg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fwZ_MLzaEfCmPuiV1Waysg" name="searchShopReviews">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iljAULzaEfCmPuiV1Waysg" name="shopId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_WappYLzdEfCmPuiV1Waysg" name="summary" type="_2aF28LzcEfCmPuiV1Waysg"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mG1VwLzaEfCmPuiV1Waysg" name="addProductReview">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_1RMnILzaEfCmPuiV1Waysg" name="customerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_oNp4ULzaEfCmPuiV1Waysg" name="productId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r3VUwLzaEfCmPuiV1Waysg" name="rating">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_uGZ0YLzaEfCmPuiV1Waysg" name="comment">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_4iBesLzaEfCmPuiV1Waysg" name="successful" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8VtywLzaEfCmPuiV1Waysg" name="addShopReview">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Gm-AILzbEfCmPuiV1Waysg" name="customerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_-x8koLzaEfCmPuiV1Waysg" name="shopId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_BsGooLzbEfCmPuiV1Waysg" name="rating">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_EiN6ILzbEfCmPuiV1Waysg" name="comment">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JDr6MLzbEfCmPuiV1Waysg" name="successful" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_guu5YLy-EfCmPuiV1Waysg" name="access" memberEnd="_guxVoby-EfCmPuiV1Waysg _guyjwry-EfCmPuiV1Waysg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_guwukLy-EfCmPuiV1Waysg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_guxVoLy-EfCmPuiV1Waysg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_guyjwry-EfCmPuiV1Waysg" name="ReviewService" type="_7rn0ELyyEfCmPuiV1Waysg" association="_guu5YLy-EfCmPuiV1Waysg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2XHXELy-EfCmPuiV1Waysg" memberEnd="_2XJzUby-EfCmPuiV1Waysg _2XKaYry-EfCmPuiV1Waysg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2XJMQLy-EfCmPuiV1Waysg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2XJzULy-EfCmPuiV1Waysg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2XKaYry-EfCmPuiV1Waysg" name="reviewDB" type="_aS-98Ly-EfCmPuiV1Waysg" association="_2XHXELy-EfCmPuiV1Waysg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BC5kULy_EfCmPuiV1Waysg" name="ProductReview">
+      <generalization xmi:type="uml:Generalization" xmi:id="_hKw4oLy_EfCmPuiV1Waysg" general="_2uEqELy0EfCmPuiV1Waysg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G-0JILy_EfCmPuiV1Waysg" name="productId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EMd9ULy_EfCmPuiV1Waysg" name="ShopReview">
+      <generalization xmi:type="uml:Generalization" xmi:id="_h_COMLy_EfCmPuiV1Waysg" general="_2uEqELy0EfCmPuiV1Waysg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VupaoLy_EfCmPuiV1Waysg" name="shopId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_q3FM8Ly_EfCmPuiV1Waysg" name="Customer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xmaywLy_EfCmPuiV1Waysg" name="customerId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2U8XYLy_EfCmPuiV1Waysg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5EqtALy_EfCmPuiV1Waysg" name="address">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Cg9oUrzAEfCmPuiV1Waysg" name="review" type="_2uEqELy0EfCmPuiV1Waysg" association="_Cg7zILzAEfCmPuiV1Waysg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kt4mcLzAEfCmPuiV1Waysg" name="LiteralInteger1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kt7CsLzAEfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Cg7zILzAEfCmPuiV1Waysg" name="makeReviews" memberEnd="_Cg9oUrzAEfCmPuiV1Waysg _Cg-2crzAEfCmPuiV1Waysg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cg9oULzAEfCmPuiV1Waysg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Cg9oUbzAEfCmPuiV1Waysg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Cg-2crzAEfCmPuiV1Waysg" name="reviewer" type="_q3FM8Ly_EfCmPuiV1Waysg" association="_Cg7zILzAEfCmPuiV1Waysg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KAhKILzAEfCmPuiV1Waysg" name="LiteralInteger1" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KAhKIbzAEfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2aF28LzcEfCmPuiV1Waysg" name="reviewSummary">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7Z9DMLzcEfCmPuiV1Waysg" name="averageRating">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__bVN8LzcEfCmPuiV1Waysg" name="commentSummary">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DokN8rzeEfCmPuiV1Waysg" name="summarisedReviews" type="_2uEqELy0EfCmPuiV1Waysg" aggregation="shared" association="_DogjkLzeEfCmPuiV1Waysg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MKZFELzeEfCmPuiV1Waysg" name="LiteralInteger1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MKZsILzeEfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HxrN0LzdEfCmPuiV1Waysg" name="toJSONString">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_LE-KkLzdEfCmPuiV1Waysg" name="JSONString" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DogjkLzeEfCmPuiV1Waysg" memberEnd="_DokN8rzeEfCmPuiV1Waysg _Don4ULzeEfCmPuiV1Waysg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DokN8LzeEfCmPuiV1Waysg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DokN8bzeEfCmPuiV1Waysg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Don4ULzeEfCmPuiV1Waysg" name="summary" type="_2aF28LzcEfCmPuiV1Waysg" association="_DogjkLzeEfCmPuiV1Waysg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M4jyoLzeEfCmPuiV1Waysg" name="LiteralInteger1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M4jyobzeEfCmPuiV1Waysg" name="LiteralUnlimitedNatural1" value="*"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cadQkLcHEfCZsMx9M8UTQw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cajXMLcHEfCZsMx9M8UTQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
