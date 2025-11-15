@@ -2555,7 +2555,7 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ZxPWAcJUEfCcKKQi9ynXDQ" x="18" y="18"/>
             </children>
             <element xmi:type="uml:BehaviorExecutionSpecification" href="PapyrusDemo.uml#_ZxHaMMJUEfCcKKQi9ynXDQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZxOu8cJUEfCcKKQi9ynXDQ" x="60" y="166" width="20" height="1061"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZxOu8cJUEfCcKKQi9ynXDQ" x="60" y="26" width="20" height="1201"/>
           </children>
           <element xmi:type="uml:Lifeline" href="PapyrusDemo.uml#_iZrn8MJTEfCcKKQi9ynXDQ"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iZuEMcJTEfCcKKQi9ynXDQ" x="334" y="10" width="141" height="1247"/>
